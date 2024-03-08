@@ -14,7 +14,7 @@ class LeadController extends Controller
     public function store(Request $request){
         $data = $request->all();
 
-        $validator = Validator::make($data. [
+        $validator = Validator::make($data , [
             'name' => 'required|max:50',
             'surname' => 'required|max:50',
             'email' => 'required',
